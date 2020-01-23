@@ -1,5 +1,5 @@
 {
-  "name": "Tacos",
+  "name": "tacos",
   "version": "1.0.0",
   "description": "A Taco eating app!",
   "main": "server.js",
