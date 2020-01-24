@@ -13,12 +13,18 @@ var PORT = process.env.PORT || 3000;
 // Middleware
 app.use(methodOverride("_method"));
 app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.urlencoded({
+	extended: true
+}));
 app.use(bodyParser.text());
-app.use(bodyParser.json({ type: "application/vnd.api+json" }));
+app.use(bodyParser.json({
+	type: "application/vnd.api+json"
+}));
 
 // Set up rendering engine, Handlebars
-app.engine("handlebars", exphbs({ defaultLayout: "main" }));
+app.engine("handlebars", exphbs({
+	defaultLayout: "main"
+}));
 app.set("view engine", "handlebars");
 
 // Static files and routes (middleware)
@@ -26,6 +32,6 @@ app.use(express.static(__dirname + "/public"));
 app.use("/", router);
 
 // Start server
-app.listen(PORT, function() {
+app.listen(PORT, function () {
 	console.log("Listening on PORT " + PORT);
 });

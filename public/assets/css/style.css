@@ -54,7 +54,8 @@ button {
 	margin: 1em 0 1em 1em;
 }
 
-#tacos-devoured h2, #tacos-devoured div {
+#tacos-devoured h2,
+#tacos-devoured div {
 	color: #ddd;
 }
 
