@@ -14,7 +14,7 @@ var taco = {
 		});
 	},
 	updateOne: function (tacoId, cb) {
-		orm.updateOne("burgers", "devoured", 1, "id", tacoId, function (res) {
+		orm.updateOne("tacos", "devoured", 1, "id", tacoId, function (res) {
 			cb(res);
 		});
 	}
