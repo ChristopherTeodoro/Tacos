@@ -1,6 +1,6 @@
 ### Schema
-CREATE DATABASE tacos_db;
-USE tacos_db;
+
+USE a9tj0ozkj9w9uqcd;
 
 CREATE TABLE tacos
 (
